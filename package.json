@@ -1,0 +1,30 @@
+{
+  "name": "monorepo-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Jakub Biesiada <biesiadajakub@icloud.com>",
+  "private": true,
+  "repository": "",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "submodules": "git pull --recurse-submodules",
+    "prettier": "prettier --write \"**/*.{js,json,md,ts,tsx}\"",
+    "prettier:check": "prettier --list-different \"**/*.{js,json,md,ts,tsx}\"",
+    "start": "lerna run --scope @windowz/* --parallel start",
+    "build": "lerna run --scope @windowz/* build",
+    "serve": "lerna run --scope @windowz/* --parallel serve",
+    "clean": "lerna run --scope @windowz/* --parallel clean",
+    "test": "lerna run --scope @windowz/* --parallel test"
+  },
+  "devDependencies": {
+    "concurrently": "5.3.0",
+    "husky": "^4.3.0",
+    "lerna": "3.22.1",
+    "prettier": "2.1.2",
+    "pretty-quick": "3.1.0"
+  }
+}
