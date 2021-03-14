@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "Jakub Biesiada <biesiadajakub@icloud.com>",
   "private": true,
-  "repository": "",
+  "repository": "https://github.com/the-mes/monorepo-starter.git",
   "workspaces": {
     "packages": [
       "packages/*"
