@@ -1,10 +1,10 @@
 {
-  "name": "monorepo-starter",
+  "name": "monorepo-packages-starter",
   "version": "0.0.0",
   "license": "MIT",
   "author": "Jakub Biesiada <biesiadajakub@icloud.com>",
   "private": true,
-  "repository": "https://github.com/the-mes/monorepo-starter.git",
+  "repository": "https://github.com/the-mes/monorepo-packages-starter.git",
   "workspaces": {
     "packages": [
       "packages/*"
@@ -14,11 +14,11 @@
     "submodules": "git pull --recurse-submodules",
     "prettier": "prettier --write \"**/*.{js,json,md,ts,tsx}\"",
     "prettier:check": "prettier --list-different \"**/*.{js,json,md,ts,tsx}\"",
-    "start": "lerna run --scope @monorepo-starter/* --parallel start",
-    "build": "lerna run --scope @monorepo-starter/* build",
-    "serve": "lerna run --scope @monorepo-starter/* --parallel serve",
-    "clean": "lerna run --scope @monorepo-starter/* --parallel clean",
-    "test": "lerna run --scope @monorepo-starter/* --parallel test"
+    "start": "lerna run --scope @monorepo-packages-starter/* --parallel start",
+    "build": "lerna run --scope @monorepo-packages-starter/* build",
+    "serve": "lerna run --scope @monorepo-packages-starter/* --parallel serve",
+    "clean": "lerna run --scope @monorepo-packages-starter/* --parallel clean",
+    "test": "lerna run --scope @monorepo-packages-starter/* --parallel test"
   },
   "devDependencies": {
     "concurrently": "5.3.0",
